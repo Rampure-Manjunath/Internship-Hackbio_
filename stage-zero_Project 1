@@ -1,0 +1,33 @@
+#Project 1
+
+#!/bin/bash
+
+echo "Manju"
+
+mkdir manju
+
+mkdir biocomputing && cd biocomputing
+
+wget https://raw.githubusercontent.com/HackBio-Internship/Bash_NGS_Starters/refs/heads/main/biocomp_samp/wildtype.fna https://raw.githubusercontent.com/HackBio-Internship/Bash_NGS_Starters/refs/heads/main/biocomp_samp/wildtype.gbk https://raw.githubusercontent.com/HackBio-Internship/Bash_NGS_Starters/refs/heads/main/biocomp_samp/wildtype.gbk
+mv https://raw.githubusercontent.com/HackBio-Internship/Bash_NGS_Starters/refs/heads/main/biocomp_samp/wildtype.fna ../
+
+grep -i 'tata' wildtype.fna
+
+grep -i 'tatatata' wildtype.fna
+# from the above two commands came to know that few lines are for mutant
+
+grep -i 'tatatata' wildtype.fna > mutant.fna #printing all the matching lines to a new file
+
+cd biocomputing #moving to biocomputing directory
+
+tail -n +2 wildtype.gbk | wc -l # counting the number of line excluding the header
+
+head -n 1 wildtype.gbk | awk '{print $3, $4}' #Printing the sequence length of the .gbk file. (Use the LOCUS tag in the first line)
+
+grep 'SOURCE' wildtype.gbk | awk '{print $2, $3}' # printing the source organism of the .gbk file
+
+grep '/gene=' wildtype.gbk | cut -d '"' -f2 | sort -u #listing the gene names of the gbk file
+
+clear && history # clearing my terminal space and printing all the commands that is used today
+
+    #list the files in the two folders
