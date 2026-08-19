@@ -1,0 +1,27 @@
+Project 2
+
+#!/bin/bash
+
+conda activate base # activating conda base environment
+
+conda create -n funtools python=3.10 pandas numpy # creating a conda environment named funtools
+
+conda activate funtools # activating the funtools environment
+
+sudo apt-get install -y figlet # installing figlet from apt-get
+
+conda install -c bioconda bwa # Installing bwa through the bioconda channel
+
+conda install -c bioconda blast # Installing blast through the bioconda channel
+
+conda install -c bioconda samtools # Installing samtools through the bioconda channel
+
+conda install -c bioconda bedtools # Installing bedtools through the bioconda channel
+
+conda install -c bioconda spades # Installing spades through the bioconda channel
+
+conda install -c bioconda bcftools # Installing bcftools through the bioconda channel
+
+conda install -c bioconda fastp # Installing fastp through the bioconda channel
+
+conda install -c bioconda multiqc # Installing multiqc through the bioconda channel
