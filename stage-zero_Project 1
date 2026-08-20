@@ -1,4 +1,4 @@
-#Project 1
+Project 1
 
 #!/bin/bash
 
@@ -10,6 +10,8 @@ mkdir biocomputing && cd biocomputing
 
 wget https://raw.githubusercontent.com/HackBio-Internship/Bash_NGS_Starters/refs/heads/main/biocomp_samp/wildtype.fna https://raw.githubusercontent.com/HackBio-Internship/Bash_NGS_Starters/refs/heads/main/biocomp_samp/wildtype.gbk https://raw.githubusercontent.com/HackBio-Internship/Bash_NGS_Starters/refs/heads/main/biocomp_samp/wildtype.gbk
 mv https://raw.githubusercontent.com/HackBio-Internship/Bash_NGS_Starters/refs/heads/main/biocomp_samp/wildtype.fna ../
+
+rm wildtype.gbk1
 
 grep -i 'tata' wildtype.fna
 
@@ -30,4 +32,6 @@ grep '/gene=' wildtype.gbk | cut -d '"' -f2 | sort -u #listing the gene names of
 
 clear && history # clearing my terminal space and printing all the commands that is used today
 
-    #list the files in the two folders
+ls #lists in the current working directory 
+
+ls ../ #list the files in the parent working directory
