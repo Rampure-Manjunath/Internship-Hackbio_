@@ -4,7 +4,7 @@ This repository contains the bash scripts and command logs for **Stage Zero** of
 
 ## Repository Contents
 
-* **`stage-zero_Project 1.txt`**: A Bash script demonstrating basic directory navigation, file downloading, sequence pattern searching (`grep`), and parsing GenBank (`.gbk`) and FASTA (`.fna`) files.
+* **`stage-zero_Project_1.txt`**: A Bash script demonstrating basic directory navigation, file downloading, sequence pattern searching (`grep`), and parsing GenBank (`.gbk`) and FASTA (`.fna`) files.
 * **`stage-zero_Project_2.txt`**: A Bash script for setting up a dedicated Conda environment (`funtools`) and installing essential bioinformatics and NGS (Next-Generation Sequencing) tools.
 
 ---
